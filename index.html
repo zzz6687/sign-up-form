@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <video autoplay loop muted playsinline><source src="media/backgroundVideo.mp4" type="video/mp4"></video>
+
+    <div>
+        <fieldset>
+            <legend>Sign-Up</legend>
+            <label for="firstName">Name:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Name:</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="mail">
+
+            <label for="number">Phone number:</label>
+            <input type="tel" id="number" name="number">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit">Create Account</button>
+
+            <p>Already have an account?<a href="#">Log In</a></p>
+        </fieldset>
+    </div>
 </body>
 </html>
