@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <title>Sign-Up Form</title>
 </head>
 <body>
     <video autoplay loop muted playsinline><source src="media/backgroundVideo.mp4" type="video/mp4"></video>
-
     <div>
+        <form action="#">
         <fieldset>
-            <legend>Sign-Up</legend>
-            <label for="firstName">Name:</label>
-            <input type="text" id="firstName" name="firstName">
+            <p><b>This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.</b></p>
+            <p><b>Sign up <em>now</em> to get started.
+                You know you want to.</b></p>
+            <label for="firstName">First Name <span aria-label="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" required aria-required="true">
 
-            <label for="lastName">Name:</label>
-            <input type="text" id="lastName" name="lastName">
+            <label for="lastName">Last Name <span aria-label="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" required aria-required="true">
 
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="mail">
+            <label for="mail">E-mail <span aria-label="required">*</span></label>
+            <input type="email" id="mail" name="mail" required aria-required="true">
 
-            <label for="number">Phone number:</label>
+            <label for="number">Phone number</label>
             <input type="tel" id="number" name="number">
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
+            <label for="password">Password <span aria-label="required">*</span></label>
+            <input type="password" id="password" name="password" minlength="8" required aria-required="true">
 
-            <button type="submit">Create Account</button>
+            <input name="submit" type="submit" id="submit" class="submit" value="Create Account">
 
             <p>Already have an account?<a href="#">Log In</a></p>
         </fieldset>
+    </form>
     </div>
 </body>
 </html>
